@@ -3,6 +3,7 @@ package com.zis.purchase.daoImpl;
 import java.util.List;
 
 import org.hibernate.LockMode;
+import org.hibernate.criterion.DetachedCriteria;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -96,6 +97,10 @@ public class TempImportDetailDaoImpl extends HibernateDaoSupport implements Temp
 			log.error("find by example failed", re);
 			throw re;
 		}
+	}
+	
+	public List findByCriteria(DetachedCriteria criteria) {
+		return getHibernateTemplate().findByCriteria(criteria);
 	}
 
 	public List findByProperty(String propertyName, Object value) {

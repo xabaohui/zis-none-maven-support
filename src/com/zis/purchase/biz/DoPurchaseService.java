@@ -231,7 +231,7 @@ public class DoPurchaseService {
 	/**
 	 * 列出特定批次下特定状态的临时记录，用于页面展示或者导出
 	 * 
-	 * @param batchId
+	 * @param taskId
 	 * @param tempImportDetailStatus
 	 * @return
 	 */
@@ -239,6 +239,15 @@ public class DoPurchaseService {
 			String tempImportDetailStatus) {
 		return tempImportBO
 				.findTempImportDetail(taskId, tempImportDetailStatus);
+	}
+	
+	/**
+	 * 查找临时导入明细
+	 * @param criteria
+	 * @return
+	 */
+	public List<TempImportDetail> findTempImportDetailByCritera(DetachedCriteria criteria) {
+		return this.tempImportBO.findTempImportDetailByCritera(criteria);
 	}
 
 	/**

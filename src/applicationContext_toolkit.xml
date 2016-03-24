@@ -28,6 +28,11 @@
 	<bean id="bookEditionFixAction" class="com.zis.toolkit.action.BookEditionFixAction" scope="prototype">
 		<property name="bookInfoToolkit" ref="bookInfoToolkit"/>
 	</bean>
+	<!-- 【临时】库位校准 -->
+	<bean id="stockPosCheckBOAction" class="com.zis.toolkit.action.StockPosCheckBOAction" scope="prototype">
+		<property name="bookService" ref="bookService"/>
+		<property name="doPurchaseService" ref="doPurchaseService"/>
+	</bean>
 	
 	  <!-- 配置参与事务的类 -->
       <aop:config>

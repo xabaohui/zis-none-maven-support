@@ -8,8 +8,9 @@ import java.sql.Timestamp;
 
 public class TempImportDetail implements java.io.Serializable {
 
-	// Fields
+	private static final long serialVersionUID = 1L;
 
+	// Fields
 	private Integer id;
 	private String isbn;
 	private String origIsbn;

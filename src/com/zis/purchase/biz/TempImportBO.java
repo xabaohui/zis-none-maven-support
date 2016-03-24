@@ -256,6 +256,10 @@ public class TempImportBO {
 		}
 		return resultList;
 	}
+	
+	public List<TempImportDetail> findTempImportDetailByCritera(DetachedCriteria criteria) {
+		return this.tempImportDetailDao.findByCriteria(criteria);
+	}
 
 	/**
 	 * 批量更新临时导入记录，使之成功或者失效

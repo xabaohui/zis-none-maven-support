@@ -6,5 +6,6 @@
 	<include file="struts_api.xml"/>
 	<include file="struts_purchase.xml"/>
 	<include file="struts_toolkit.xml" />
-	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.multipart.maxSize" value="10000000" />
 </struts>    
