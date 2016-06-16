@@ -91,6 +91,9 @@
 		<action name="exportWangqubaoItemDataByTempImport" class="wangqubaoItemExportAction" method="export">
 			<result name="success">/success.jsp</result>
 		</action>
+		<action name="exportBookInfoByTempImport" class="bookInfoExportAction" method="export">
+			<result name="success">/success.jsp</result>
+		</action>
 		<action name="exportTaobaoItemDataByTempImport" class="taobaoItemCsvExportAction" method="export">
 			<result name="success">/success.jsp</result>
 		</action>

@@ -7,6 +7,7 @@
 	<h1>导入记录明细 - 已关联</h1>
 	<p/>
 	<h3><a href="purchase/viewTempImportDetailForNotMatched?status=not_matched&taskId=<s:property value="#task.id"/>">上一步</a>&nbsp;
+	|&nbsp;<a href="purchase/exportBookInfoByTempImport?taskId=<s:property value="#task.id"/>" target="_blank">导出基本信息</a>&nbsp;
 	|&nbsp;<a href="purchase/exportTaobaoItemDataByTempImport?taskId=<s:property value="#task.id"/>" target="_blank">导出淘宝数据包</a>&nbsp;
 	|&nbsp;<a href="purchase/exportWangqubaoItemDataByTempImport?taskId=<s:property value="#task.id"/>" target="_blank">导出网渠宝商品资料</a>&nbsp;
 	|&nbsp;<a href="purchase/transferTempImportDetailForMatched?operateType=<%=TempImportDetailTransferAction.OPERATE_TYPE_BOOK_STOCK %>&taskId=<s:property value="#task.id"/>">转为更新库存</a>&nbsp;

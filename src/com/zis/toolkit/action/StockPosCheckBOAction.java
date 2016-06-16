@@ -50,7 +50,7 @@ public class StockPosCheckBOAction {
 		// 查询条码匹配的库位
 		DetachedCriteria criteria = DetachedCriteria.forClass(TempImportDetail.class);
 		criteria.add(Restrictions.eq("isbn", isbn));
-		criteria.add(Restrictions.eq("taskId", taskId));
+		criteria.add(Restrictions.eq("taskId", 18));
 		criteria.add(Restrictions.eq("status", TempImportDetailStatus.MATCHED));
 		List<TempImportDetail> list = this.doPurchaseService.findTempImportDetailByCritera(criteria);
 		if(list == null || list.isEmpty()) {

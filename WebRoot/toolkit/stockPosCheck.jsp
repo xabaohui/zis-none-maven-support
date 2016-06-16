@@ -43,7 +43,7 @@
 <s:textfield name="isbn" label="ISBN" id="userInput" />
 </p>
 <p />
-<div id="lastScanResult" style="font-size:50px;color:green;font-weight:bold;font-family:楷体">相关库位</div>
+<div id="lastScanResult" style="font-size:35px;color:green;font-weight:bold;font-family:楷体">相关库位</div>
 </div>
 
 <div id="bg-to-be-hidden"></div>

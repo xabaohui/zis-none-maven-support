@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
+
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"

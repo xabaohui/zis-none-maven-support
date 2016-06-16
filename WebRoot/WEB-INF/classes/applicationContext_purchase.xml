@@ -255,6 +255,9 @@
 	</bean>
 	<bean id="inwarehouseDataExportDispatcherAction" class="com.zis.purchase.action.InwarehouseDataExportDispatcherAction" scope="prototype">
 	</bean>
+	<bean id="bookInfoExportAction" class="com.zis.purchase.action.BookInfoExportAction" scope="prototype">
+		<property name="doPurchaseService" ref="doPurchaseService"/>
+	</bean>
 	<bean id="wangqubaoInwarehouseExportAction" class="com.zis.purchase.action.WangqubaoInwarehouseExportAction" scope="prototype">
 		<property name="doPurchaseService" ref="doPurchaseService"/>
 		<property name="bookService" ref="bookService"/>

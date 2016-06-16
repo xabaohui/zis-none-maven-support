@@ -13,6 +13,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.zis.purchase.bean.PurchasePlan;
+import com.zis.purchase.bean.PurchasePlanStatus;
 import com.zis.purchase.dao.PurchasePlanDao;
 
 /**
@@ -131,6 +132,7 @@ public class PurchasePlanDaoImpl extends HibernateDaoSupport implements Purchase
 		Session session = this.getSession();
 		Criteria criteria = session.createCriteria(PurchasePlan.class);
 		criteria.add(Restrictions.eq(BOOK_ID, bookId));
+		criteria.add(Restrictions.eq("status", PurchasePlanStatus.NORMAL));
 		List list = criteria.list();
 		session.close();
 		if(list == null || list.isEmpty()) {
